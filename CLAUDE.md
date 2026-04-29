@@ -12,16 +12,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 0. Repository State
 
-Scaffolded 2026-04-29 against §7–8: React 18 + Vite SPA, Tailwind, Framer Motion, GSAP, Lenis. All sections from §7 are stubbed with real copy and animation behaviour pulled from `src/data/menu.js`. No `.git`, no tests, no GSAP usage yet (scroll-pin sections use plain `scroll` listeners with sticky positioning — swap to GSAP ScrollTrigger if a richer timeline is needed). `npm install` has not been run; the `dev` Docker service installs on first boot.
+Scaffolded 2026-04-29 against §7–8: React 18 + Vite SPA, Tailwind, Framer Motion, GSAP, Lenis. All sections from §7 are stubbed with real copy and animation behaviour pulled from `app/src/data/menu.js`.
+
+**Layout:** the React app lives entirely under `app/`. Root holds only `CLAUDE.md`, `Dockerfile`, `docker-compose.yml`, `nginx.conf`, `.dockerignore`, `.gitignore`. The §7 file tree (originally `kitchen-as-it-is/src/...`) now reads as `app/src/...` — paths in the architecture spec are relative to `app/`.
+
+No GSAP usage yet — pinned/horizontal sections use sticky CSS + plain scroll listeners. Swap to GSAP ScrollTrigger when a richer timeline is needed.
 
 ## Commands
 
-These will apply once the project is scaffolded per §7–8:
+Source lives in `app/`. Docker, `.gitignore`, `.dockerignore`, and this file stay at root.
 
-- **Dev (HMR via Docker):** `docker compose up dev` → http://localhost:5173
-- **Prod build + serve:** `docker compose up app --build` → http://localhost
-- **Local dev (no Docker):** `npm install && npm run dev`
-- **Production build:** `npm run build` (outputs to `dist/`)
+- **Dev (HMR via Docker, run from root):** `docker compose up dev` → http://localhost:5173
+- **Prod build + serve (root):** `docker compose up app --build` → http://localhost
+- **Local dev (no Docker):** `cd app && npm install && npm run dev`
+- **Production build:** `cd app && npm run build` (outputs to `app/dist/`)
 - **Lint / test:** not yet defined — add tooling when introduced
 
 ---
