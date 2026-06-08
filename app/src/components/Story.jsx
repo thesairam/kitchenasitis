@@ -51,7 +51,7 @@ export default function Story() {
           transition={{ duration: 0.8 }}
           className="font-display text-4xl md:text-6xl leading-tight mb-12 max-w-3xl"
         >
-          Every recipe traces back to one place — the kitchen I grew up in.
+          We travel. We taste. We bring it home — exactly as it is.
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12 text-ink/75 text-lg leading-relaxed">
           <motion.p
@@ -60,9 +60,10 @@ export default function Story() {
             viewport={{ once: true, margin: '-15% 0px' }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            I've eaten in many kitchens — Hyderabad's old city lanes, Chennai street stalls, Andhra homes
-            where the pappu is made fresh every morning, North Indian tables where the dal simmers all night.
-            All of it traces back to the kitchen I grew up in.
+            We love to travel — and whenever we find a dish that stops us in our tracks, we obsess over it.
+            The biryani in a narrow Hyderabad lane. The pappu from an Andhra home kitchen. The dosa that
+            came out perfectly thin on a Chennai street corner. We eat it slowly, ask questions, and go
+            home to figure it out.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -70,9 +71,9 @@ export default function Story() {
             viewport={{ once: true, margin: '-15% 0px' }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            "Kitchen As It Is" means exactly that. No adaptation for a foreign palate. No toned-down spice,
-            no simplified technique. The biryani is sealed and dum-cooked. The pappu is made with real
-            tamarind and fresh greens, the way it's made at home.
+            That's what "Kitchen As It Is" means. Every dish we cook is a replica — as faithful as we can
+            make it — of the best version we ever tasted. No adaptation for a foreign palate. No shortcuts
+            in technique. Just the recipe, as it is, cooked in our Amsterdam kitchen and shared with you.
           </motion.p>
         </div>
 

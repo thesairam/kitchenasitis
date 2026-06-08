@@ -44,7 +44,7 @@ export default function App() {
   useLenis()
 
   return (
-    <div className="bg-cream text-ink">
+    <div className="bg-cream text-ink pb-14">
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
