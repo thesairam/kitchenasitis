@@ -1,7 +1,8 @@
 services:
 
+  # ── Development (Vite HMR, no server needed) ──────────────────────────────
   dev:
-    image: node:20-alpine
+    image: node:22-alpine
     working_dir: /app
     volumes:
       - ./app:/app
@@ -12,12 +13,13 @@ services:
     environment:
       - NODE_ENV=development
 
+  # ── Production (Node serves API + built frontend) ─────────────────────────
   app:
     build:
       context: .
-      target: production
+      target: runtime
     ports:
-      - "80:80"
+      - "8080:8080"
+    env_file:
+      - ./server/.env
     restart: unless-stopped
-    environment:
-      - NODE_ENV=production

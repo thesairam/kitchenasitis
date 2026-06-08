@@ -24,7 +24,7 @@ function Counter({ to, suffix }) {
   }, [inView, to])
 
   return (
-    <span ref={ref} className="font-display text-6xl md:text-7xl">
+    <span ref={ref} className="font-display text-4xl sm:text-5xl md:text-7xl">
       {n}
       {suffix}
     </span>
@@ -76,7 +76,7 @@ export default function Story() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-3 gap-6 md:gap-12 mt-24 pt-12 border-t border-ink/10">
+        <div className="grid grid-cols-3 gap-3 md:gap-12 mt-16 md:mt-24 pt-10 md:pt-12 border-t border-ink/10">
           {stats.map((s) => (
             <div key={s.label}>
               <Counter to={s.value} suffix={s.suffix} />

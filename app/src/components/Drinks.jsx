@@ -12,7 +12,7 @@ const card = {
 
 export default function Drinks() {
   return (
-    <section className="bg-cream py-32 px-6 md:px-10">
+    <section className="bg-cream py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-7xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}

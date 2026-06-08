@@ -3,7 +3,7 @@ import { steps } from '../data/menu'
 
 export default function HowItWorks() {
   return (
-    <section className="bg-surface py-32 px-6 md:px-10">
+    <section className="bg-surface py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-6xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ export default function HowItWorks() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="relative"
             >
-              <div className="w-12 h-12 rounded-full bg-cream border border-ink/15 flex items-center justify-center font-display text-xl text-spice mb-6">
+              <div className="w-12 h-12 rounded-full bg-spice/10 border border-spice/30 flex items-center justify-center font-display text-xl text-spice mb-6">
                 {s.n}
               </div>
               <div className="font-display text-2xl mb-3">{s.title}</div>

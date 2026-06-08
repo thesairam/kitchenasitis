@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { shaktiBowl } from '../data/menu'
+import { proteinBowl } from '../data/menu'
 
 export default function ShaktiBowl() {
   const [hovered, setHovered] = useState(null)
 
   return (
-    <section id="shakti" className="bg-cream py-32 px-6 md:px-10">
+    <section id="bowl" className="bg-cream py-32 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-12 gap-12 mb-16">
           <div className="md:col-span-7">
@@ -17,7 +17,7 @@ export default function ShaktiBowl() {
               transition={{ duration: 0.6 }}
               className="text-sm tracking-widest uppercase text-spice mb-6"
             >
-              Signature
+              Signature · Veg &amp; Non-veg
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 24 }}
@@ -26,7 +26,7 @@ export default function ShaktiBowl() {
               transition={{ duration: 0.7 }}
               className="font-display text-5xl md:text-7xl leading-tight"
             >
-              Andhra Shakti Bowl
+              {proteinBowl.name}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -35,12 +35,22 @@ export default function ShaktiBowl() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="mt-6 text-lg text-ink/70 max-w-xl"
             >
-              {shaktiBowl.description}
+              {proteinBowl.description}
             </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="mt-8 inline-flex items-center gap-2 text-sm text-ink/50 border border-ink/15 rounded-full px-4 py-2"
+            >
+              <span className="w-2 h-2 rounded-full bg-spice animate-pulse" />
+              Protein and greens rotate weekly
+            </motion.div>
           </div>
           <div className="md:col-span-5 flex md:justify-end items-end">
             <div className="space-y-2">
-              {shaktiBowl.prices.map((p) => (
+              {proteinBowl.prices.map((p) => (
                 <div key={p.variant} className="flex items-baseline gap-4 justify-end">
                   <span className="text-ink/60 text-sm">{p.variant}</span>
                   <span className="font-display text-3xl text-gold">€{p.price}</span>
@@ -51,7 +61,7 @@ export default function ShaktiBowl() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {shaktiBowl.components.map((c, i) => (
+          {proteinBowl.components.map((c, i) => (
             <motion.div
               key={c.slot}
               initial={{ opacity: 0, rotateY: -90 }}

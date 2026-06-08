@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --cream: #F7F3EC;
-  --ink: #1C1A16;
-  --spice: #C4541A;
-  --gold: #D4A843;
-  --muted: #8A7F72;
-  --surface: #EDE8DF;
+  --cream:   #FAFAF7;
+  --ink:     #161616;
+  --spice:   #E8610B;
+  --forest:  #1A4D35;
+  --gold:    #C49A3C;
+  --muted:   #6E7070;
+  --surface: #F0EDE6;
 }
 
 * {
@@ -22,21 +23,10 @@ html, body {
   font-family: 'DM Sans', system-ui, sans-serif;
 }
 
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
 
 .font-display {
   font-family: 'Cormorant Garamond', serif;
@@ -44,9 +34,8 @@ html.lenis, html.lenis body {
   letter-spacing: -0.01em;
 }
 
-.grain {
-  position: relative;
-}
+/* Subtle film grain on sections that use it */
+.grain { position: relative; }
 .grain::before {
   content: '';
   position: absolute;
@@ -65,4 +54,9 @@ html.lenis, html.lenis body {
   text-transform: uppercase;
   border: 1px solid currentColor;
   border-radius: 999px;
+}
+
+/* Tricolour top stripe — hidden Indian flag in the Dutch palette */
+.tricolour-stripe {
+  background: linear-gradient(to right, #E8610B 33.33%, #FAFAF7 33.33% 66.66%, #1A4D35 66.66%);
 }

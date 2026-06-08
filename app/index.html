@@ -2,13 +2,135 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kitchen As It Is — authentic Hyderabadi, Andhra, North & South Indian home cooking in Amsterdam. Dum biryani, Andhra Shakti Bowl, no shortcuts." />
+
+    <!-- Primary SEO -->
+    <title>Kitchen As It Is — Authentic Indian Home Cooking & Supper Club in Amsterdam</title>
+    <meta name="description" content="Authentic Hyderabadi dum biryani, Andhra protein bowl, and Indian supper club in Amsterdam. Home-cooked Indian food — halal, no shortcuts. Order on Kookxtra or WhatsApp." />
+    <meta name="keywords" content="Indian food Amsterdam, biryani Amsterdam, Hyderabadi biryani Amsterdam, Andhra food Amsterdam, Indian home cook Amsterdam, halal biryani Amsterdam, Kookxtra Indian, Indian supper club Amsterdam, protein bowl Amsterdam, dum biryani Amsterdam, Indian catering Amsterdam, Amstelveen Indian food" />
+    <meta name="author" content="Kitchen As It Is" />
+    <meta name="theme-color" content="#C4541A" />
+    <link rel="canonical" href="https://www.kitchenasitis.com/" />
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn previews) -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:site_name" content="Kitchen As It Is" />
+    <meta property="og:title" content="Kitchen As It Is — Authentic Indian Home Cooking in Amsterdam" />
+    <meta property="og:description" content="Hyderabadi dum biryani, Andhra protein bowl, and an Indian supper club — home-cooked in Amsterdam. Halal. Order on Kookxtra or WhatsApp." />
+    <meta property="og:image" content="https://www.kitchenasitis.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kitchen As It Is — Authentic Indian home food in Amsterdam" />
+    <meta property="og:url" content="https://www.kitchenasitis.com/" />
+    <meta property="og:locale" content="en_NL" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kitchen As It Is — Authentic Indian Home Cooking in Amsterdam" />
+    <meta name="twitter:description" content="Hyderabadi dum biryani, Andhra protein bowl, and an Indian supper club — home-cooked in Amsterdam. Halal. Order on Kookxtra or WhatsApp." />
+    <meta name="twitter:image" content="https://www.kitchenasitis.com/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Structured data — Local Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Kitchen As It Is",
+      "description": "Authentic Indian home kitchen in Amsterdam specialising in Hyderabadi dum biryani, Andhra protein bowl, and monthly Indian supper club experiences.",
+      "url": "https://www.kitchenasitis.com",
+      "telephone": "+31647804089",
+      "image": "https://www.kitchenasitis.com/og-image.png",
+      "logo": "https://www.kitchenasitis.com/og-image.png",
+      "sameAs": [
+        "https://www.instagram.com/kitchenasitis",
+        "https://wa.me/31647804089"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Amsterdam",
+        "addressCountry": "NL"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Amsterdam" },
+        { "@type": "City", "name": "Amstelveen" }
+      ],
+      "servesCuisine": ["Indian", "Hyderabadi", "Andhra", "North Indian", "South Indian"],
+      "priceRange": "€10–€15",
+      "hasMenu": "https://www.kitchenasitis.com/#biryani",
+      "acceptsReservations": "True",
+      "paymentAccepted": "Cash, Card",
+      "currenciesAccepted": "EUR",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+          "opens": "12:00",
+          "closes": "21:00"
+        }
+      ],
+      "menu": [
+        {
+          "@type": "Menu",
+          "name": "Biryani",
+          "description": "Rotating weekly dum biryani — Hyderabadi, Fry Piece, 65 Biryani. Veg available.",
+          "hasMenuSection": {
+            "@type": "MenuSection",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Hyderabadi Dum Biryani",
+                "description": "Slow-sealed dum cooking, saffron basmati, caramelised onions, whole spices.",
+                "offers": { "@type": "Offer", "price": "14", "priceCurrency": "EUR" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Protein Bowl",
+                "description": "Andhra toor dal pappu over rice with rotating green, grilled protein and seasonal vegetable.",
+                "offers": { "@type": "Offer", "price": "11", "priceCurrency": "EUR" }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured data — Supper Club (Event series) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "Amsterdam Indian Supper Club by Kitchen As It Is",
+      "description": "A monthly Indian-themed supper club in Amsterdam — authentic home-cooked feast, mehndi experience, cultural storytelling. Max 12 guests per evening.",
+      "url": "https://www.kitchenasitis.com/supper-club",
+      "image": "https://www.kitchenasitis.com/og-image.png",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Kitchen As It Is",
+        "url": "https://www.kitchenasitis.com"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Amsterdam",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amsterdam",
+          "addressCountry": "NL"
+        }
+      },
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled"
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-    <title>Kitchen As It Is — Food the way it always tasted.</title>
   </head>
   <body>
     <div id="root"></div>
