@@ -12,13 +12,13 @@ const card = {
 
 export default function Drinks() {
   return (
-    <section className="bg-cream py-20 md:py-32 px-5 md:px-10">
+    <section className="bg-spice text-cream py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-7xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-sm tracking-widest uppercase text-spice mb-6"
+          className="text-xs tracking-widest uppercase text-cream/60 mb-5"
         >
           Three house drinks
         </motion.p>
@@ -27,7 +27,7 @@ export default function Drinks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="font-display text-5xl md:text-7xl mb-16 max-w-3xl"
+          className="font-display text-4xl sm:text-5xl md:text-7xl mb-14 max-w-3xl"
         >
           The bit you'll never find on a menu.
         </motion.h2>
@@ -37,20 +37,20 @@ export default function Drinks() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: '-15% 0px' }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid md:grid-cols-3 gap-5"
         >
           {drinks.map((d) => (
             <motion.article
               key={d.name}
               variants={card}
-              className="bg-surface rounded-3xl p-8 md:p-10 flex flex-col h-full"
+              className="bg-forest rounded-3xl p-8 md:p-10 flex flex-col h-full"
             >
-              <div className="w-10 h-10 rounded-full bg-spice/15 flex items-center justify-center mb-8">
-                <span className="w-3 h-3 rounded-full bg-spice" />
+              <div className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center mb-8">
+                <span className="w-3 h-3 rounded-full bg-cream/60" />
               </div>
-              <h3 className="font-display text-3xl">{d.name}</h3>
-              <p className="italic text-muted mt-2">{d.tagline}</p>
-              <p className="text-ink/65 mt-6 leading-relaxed flex-grow">{d.description}</p>
+              <h3 className="font-display text-3xl text-cream">{d.name}</h3>
+              <p className="italic text-cream/50 mt-2">{d.tagline}</p>
+              <p className="text-cream/70 mt-5 leading-relaxed flex-grow">{d.description}</p>
               <div className="font-display text-3xl text-gold mt-8">€{d.price}</div>
             </motion.article>
           ))}

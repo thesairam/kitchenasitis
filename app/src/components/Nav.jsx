@@ -25,12 +25,12 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const navBg = isSupperClub
-    ? solid ? 'bg-forest/95 backdrop-blur border-b border-cream/10' : 'bg-transparent'
-    : solid ? 'bg-cream/92 backdrop-blur border-b border-ink/8'    : 'bg-transparent'
+  const navBg = solid
+    ? 'bg-spice/95 backdrop-blur border-b border-cream/10'
+    : 'bg-transparent'
 
-  const textColour  = isSupperClub ? 'text-cream/70 hover:text-cream' : 'text-ink/65 hover:text-ink'
-  const logoColour  = isSupperClub ? 'text-cream'  : 'text-ink'
+  const textColour = 'text-cream/70 hover:text-cream'
+  const logoColour = 'text-cream'
 
   const homeLinks = [
     { label: 'Story',        href: '#story'   },
@@ -71,11 +71,11 @@ export default function Nav() {
 
           {/* Desktop CTA */}
           {isSupperClub ? (
-            <a href="#contact" className="hidden md:inline-flex text-sm bg-spice text-cream px-5 py-2 rounded-full hover:bg-cream hover:text-ink transition-colors">
+            <a href="#contact" className="hidden md:inline-flex text-sm bg-forest text-cream px-5 py-2 rounded-full hover:bg-ink transition-colors">
               Reserve a seat
             </a>
           ) : (
-            <a href="#order" className="hidden md:inline-flex text-sm bg-forest text-cream px-5 py-2 rounded-full hover:bg-spice transition-colors">
+            <a href="#order" className="hidden md:inline-flex text-sm bg-forest text-cream px-5 py-2 rounded-full hover:bg-ink transition-colors">
               Order
             </a>
           )}
