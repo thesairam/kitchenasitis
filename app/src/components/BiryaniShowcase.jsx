@@ -32,10 +32,10 @@ export default function BiryaniShowcase() {
       style={{ height: `${100 * featured.length}vh` }}
     >
       <div className="sticky top-0 h-[100dvh] flex items-center px-5 md:px-10 overflow-hidden">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-8 md:gap-12 items-center">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-6 md:gap-12 items-center">
 
           {/* Text column */}
-          <div className="md:col-span-7">
+          <div className="md:col-span-7 order-2 md:order-1">
             <p className="text-xs tracking-widest uppercase text-spice mb-4 md:mb-6">Rotating weekly</p>
 
             <AnimatePresence mode="wait">
@@ -95,16 +95,23 @@ export default function BiryaniShowcase() {
             </motion.p>
           </div>
 
-          {/* Decorative circle — hidden on mobile */}
-          <div className="hidden md:flex md:col-span-5 justify-end">
-            <div className="aspect-square w-full max-w-sm rounded-full border border-cream/10 relative grain bg-gradient-to-br from-spice/20 via-gold/10 to-forest">
-              <div className="absolute inset-6 rounded-full border border-cream/8" />
-              <div className="absolute inset-14 rounded-full border border-spice/20" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-display text-[120px] leading-none text-cream/10 select-none">
-                  {active + 1}
-                </span>
-              </div>
+          {/* Photo column */}
+          <div className="md:col-span-5 flex justify-center md:justify-end order-1 md:order-2">
+            <div className="relative w-full max-w-[340px] md:max-w-none aspect-[4/5] rounded-3xl overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={featured[active].image}
+                  src={featured[active].image}
+                  alt={featured[active].imageAlt}
+                  initial={{ opacity: 0, scale: 1.06 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.96 }}
+                  transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </AnimatePresence>
+              {/* Subtle vignette so text colours read well if overlaid */}
+              <div className="absolute inset-0 rounded-3xl ring-1 ring-cream/10 pointer-events-none" />
             </div>
           </div>
         </div>

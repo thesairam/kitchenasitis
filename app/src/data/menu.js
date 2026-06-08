@@ -5,6 +5,8 @@ export const biryanis = [
     tags: ['Halal', 'Signature'],
     price: 14,
     vegPrice: 12,
+    image: '/media/biryani/hyderabadi-biryani-saffron-thali-amsterdam.jpeg',
+    imageAlt: 'Hyderabadi dum biryani with vivid saffron rice in a steel thali, Amsterdam home kitchen',
   },
   {
     name: 'Fry Piece Biryani',
@@ -12,6 +14,8 @@ export const biryanis = [
     tags: ['Halal', 'Spicy'],
     price: 15,
     vegPrice: 12,
+    image: '/media/biryani/fry-piece-biryani-masala-chicken-amsterdam.jpeg',
+    imageAlt: 'Fry piece biryani close-up, deep-fried masala chicken with egg, Amsterdam',
   },
   {
     name: '65 Biryani',
@@ -19,6 +23,8 @@ export const biryanis = [
     tags: ['Halal', 'Spicy', 'Street style'],
     price: 15,
     vegPrice: 12,
+    image: '/media/biryani/65-biryani-crispy-chicken-amsterdam.jpeg',
+    imageAlt: '65 biryani with crispy spiced chicken pieces, dark masala rice, Amsterdam kitchen',
   },
 ]
 
