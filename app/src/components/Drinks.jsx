@@ -12,13 +12,13 @@ const card = {
 
 export default function Drinks() {
   return (
-    <section className="bg-spice text-cream py-20 md:py-32 px-5 md:px-10">
+    <section className="bg-surface py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-7xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-xs tracking-widest uppercase text-cream/60 mb-5"
+          className="text-xs tracking-widest uppercase text-spice mb-5"
         >
           Three house drinks
         </motion.p>
@@ -27,7 +27,7 @@ export default function Drinks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="font-display text-4xl sm:text-5xl md:text-7xl mb-14 max-w-3xl"
+          className="font-display text-4xl sm:text-5xl md:text-7xl mb-14 max-w-3xl text-ink"
         >
           The bit you'll never find on a menu.
         </motion.h2>
@@ -43,14 +43,14 @@ export default function Drinks() {
             <motion.article
               key={d.name}
               variants={card}
-              className="bg-forest rounded-3xl p-8 md:p-10 flex flex-col h-full"
+              className="bg-cream rounded-3xl p-8 md:p-10 flex flex-col h-full border border-ink/5"
             >
-              <div className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center mb-8">
-                <span className="w-3 h-3 rounded-full bg-cream/60" />
+              <div className="w-10 h-10 rounded-full bg-spice/12 flex items-center justify-center mb-8">
+                <span className="w-3 h-3 rounded-full bg-spice" />
               </div>
-              <h3 className="font-display text-3xl text-cream">{d.name}</h3>
-              <p className="italic text-cream/50 mt-2">{d.tagline}</p>
-              <p className="text-cream/70 mt-5 leading-relaxed flex-grow">{d.description}</p>
+              <h3 className="font-display text-3xl text-ink">{d.name}</h3>
+              <p className="italic text-muted mt-2">{d.tagline}</p>
+              <p className="text-ink/60 mt-5 leading-relaxed flex-grow">{d.description}</p>
               <div className="font-display text-3xl text-gold mt-8">€{d.price}</div>
             </motion.article>
           ))}

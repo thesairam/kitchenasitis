@@ -3,13 +3,13 @@ import { steps } from '../data/menu'
 
 export default function HowItWorks() {
   return (
-    <section className="bg-spice text-cream py-20 md:py-32 px-5 md:px-10">
+    <section className="bg-surface py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-6xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-xs tracking-widest uppercase text-cream/60 mb-5"
+          className="text-xs tracking-widest uppercase text-spice mb-5"
         >
           How it works
         </motion.p>
@@ -18,7 +18,7 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="font-display text-4xl md:text-6xl mb-16 md:mb-20 max-w-3xl"
+          className="font-display text-4xl md:text-6xl mb-16 md:mb-20 max-w-3xl text-ink"
         >
           Pre-order. I cook. You eat.
         </motion.h2>
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             viewport={{ once: true, margin: '-20% 0px' }}
             transition={{ duration: 1.4, ease: 'easeInOut' }}
             style={{ transformOrigin: 'left' }}
-            className="hidden md:block absolute top-6 left-0 right-0 h-px bg-cream/20"
+            className="hidden md:block absolute top-6 left-0 right-0 h-px bg-ink/10"
           />
           {steps.map((s, i) => (
             <motion.div
@@ -41,11 +41,11 @@ export default function HowItWorks() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="relative"
             >
-              <div className="w-12 h-12 rounded-full bg-cream/15 border border-cream/25 flex items-center justify-center font-display text-xl text-cream mb-6">
+              <div className="w-12 h-12 rounded-full bg-spice/10 border border-spice/25 flex items-center justify-center font-display text-xl text-spice mb-6">
                 {s.n}
               </div>
-              <div className="font-display text-2xl mb-3">{s.title}</div>
-              <p className="text-cream/70 leading-relaxed">{s.body}</p>
+              <div className="font-display text-2xl mb-3 text-ink">{s.title}</div>
+              <p className="text-ink/60 leading-relaxed">{s.body}</p>
             </motion.div>
           ))}
         </div>

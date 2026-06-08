@@ -38,12 +38,12 @@ export default function SupperClub() {
     <div className="bg-cream text-ink">
 
       {/* ── Hero ── */}
-      <section className="relative min-h-[100dvh] flex items-center bg-spice text-cream px-5 md:px-10 overflow-hidden grain">
+      <section className="relative min-h-[100dvh] flex items-center bg-forest text-cream px-5 md:px-10 overflow-hidden grain">
         <div
           className="absolute inset-0 opacity-20 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 75% 35%, #0F3D24 0%, transparent 55%), radial-gradient(circle at 20% 75%, #B8891E 0%, transparent 45%)',
+              'radial-gradient(circle at 75% 35%, #D4530A 0%, transparent 55%), radial-gradient(circle at 20% 75%, #B8891E 0%, transparent 40%)',
           }}
         />
         <div className="max-w-5xl mx-auto relative z-10 pt-32 pb-20 md:py-44">
@@ -115,7 +115,7 @@ export default function SupperClub() {
       </section>
 
       {/* ── The Evening ── */}
-      <section id="experience" className="py-20 md:py-32 px-5 md:px-10 bg-spice text-cream">
+      <section id="experience" className="py-20 md:py-32 px-5 md:px-10 bg-cream">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -124,8 +124,8 @@ export default function SupperClub() {
             transition={{ duration: 0.7 }}
             className="mb-12 md:mb-16"
           >
-            <p className="text-xs tracking-widest uppercase text-cream/60 mb-4">The evening</p>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl">What happens<br />at the table.</h2>
+            <p className="text-xs tracking-widest uppercase text-spice mb-4">The evening</p>
+            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-ink">What happens<br />at the table.</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-5">
@@ -136,11 +136,11 @@ export default function SupperClub() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="bg-forest rounded-3xl p-8 md:p-10"
+                className="bg-surface rounded-3xl p-8 md:p-10 border border-ink/5"
               >
-                <div className="text-xs tracking-widest uppercase text-cream/40 mb-5">{e.n}</div>
-                <h3 className="font-display text-3xl text-cream mb-3">{e.title}</h3>
-                <p className="text-cream/70 leading-relaxed">{e.body}</p>
+                <div className="text-xs tracking-widest uppercase text-muted mb-5">{e.n}</div>
+                <h3 className="font-display text-3xl text-ink mb-3">{e.title}</h3>
+                <p className="text-ink/60 leading-relaxed">{e.body}</p>
               </motion.div>
             ))}
           </div>
@@ -199,7 +199,7 @@ export default function SupperClub() {
       </section>
 
       {/* ── Culture pillars ── */}
-      <section className="py-20 md:py-32 px-5 md:px-10 bg-spice text-cream">
+      <section className="py-20 md:py-32 px-5 md:px-10 bg-surface">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -208,8 +208,8 @@ export default function SupperClub() {
             transition={{ duration: 0.7 }}
             className="text-center mb-14 md:mb-20"
           >
-            <p className="text-xs tracking-widest uppercase text-cream/60 mb-4">Indian culture</p>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl">Every gathering<br />honours a tradition.</h2>
+            <p className="text-xs tracking-widest uppercase text-spice mb-4">Indian culture</p>
+            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-ink">Every gathering<br />honours a tradition.</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-3 gap-5">
@@ -224,11 +224,11 @@ export default function SupperClub() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
-                className="bg-forest rounded-2xl p-7 md:p-10"
+                className="bg-cream rounded-2xl p-7 md:p-10 border border-ink/5"
               >
                 <div className="text-4xl mb-5">{item.icon}</div>
-                <h3 className="font-display text-2xl md:text-3xl mb-3 text-cream">{item.title}</h3>
-                <p className="text-cream/70 leading-relaxed">{item.body}</p>
+                <h3 className="font-display text-2xl md:text-3xl mb-3 text-ink">{item.title}</h3>
+                <p className="text-ink/60 leading-relaxed">{item.body}</p>
               </motion.div>
             ))}
           </div>

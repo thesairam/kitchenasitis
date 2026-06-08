@@ -6,7 +6,7 @@ export default function ShaktiBowl() {
   const [hovered, setHovered] = useState(null)
 
   return (
-    <section id="bowl" className="bg-spice text-cream py-20 md:py-32 px-5 md:px-10">
+    <section id="bowl" className="bg-cream py-20 md:py-32 px-5 md:px-10">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-12 gap-12 mb-14">
           <div className="md:col-span-7">
@@ -15,7 +15,7 @@ export default function ShaktiBowl() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-xs tracking-widest uppercase text-cream/60 mb-5"
+              className="text-xs tracking-widest uppercase text-spice mb-5"
             >
               Signature · Veg &amp; Non-veg
             </motion.p>
@@ -24,7 +24,7 @@ export default function ShaktiBowl() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="font-display text-5xl md:text-7xl leading-tight"
+              className="font-display text-5xl md:text-7xl leading-tight text-ink"
             >
               {proteinBowl.name}
             </motion.h2>
@@ -33,7 +33,7 @@ export default function ShaktiBowl() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="mt-5 text-base md:text-lg text-cream/75 max-w-xl"
+              className="mt-5 text-base md:text-lg text-ink/65 max-w-xl"
             >
               {proteinBowl.description}
             </motion.p>
@@ -42,9 +42,9 @@ export default function ShaktiBowl() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-6 inline-flex items-center gap-2 text-sm text-cream/50 border border-cream/20 rounded-full px-4 py-2"
+              className="mt-6 inline-flex items-center gap-2 text-sm text-ink/45 border border-ink/12 rounded-full px-4 py-2"
             >
-              <span className="w-2 h-2 rounded-full bg-cream/70 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-spice animate-pulse" />
               Protein and greens rotate weekly
             </motion.div>
           </div>
@@ -52,7 +52,7 @@ export default function ShaktiBowl() {
             <div className="space-y-2">
               {proteinBowl.prices.map((p) => (
                 <div key={p.variant} className="flex items-baseline gap-4 justify-end">
-                  <span className="text-cream/55 text-sm">{p.variant}</span>
+                  <span className="text-ink/50 text-sm">{p.variant}</span>
                   <span className="font-display text-3xl text-gold">€{p.price}</span>
                 </div>
               ))}
@@ -70,13 +70,13 @@ export default function ShaktiBowl() {
               transition={{ duration: 0.7, delay: i * 0.12, ease: [0.2, 0.65, 0.3, 1] }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
-              className="bg-forest rounded-2xl p-6 md:p-8 aspect-square flex flex-col justify-between cursor-pointer hover:bg-ink transition-colors duration-500"
+              className="bg-surface rounded-2xl p-6 md:p-8 aspect-square flex flex-col justify-between cursor-pointer hover:bg-forest hover:text-cream transition-colors duration-500"
             >
               <div>
-                <div className="text-xs tracking-widest uppercase text-cream/40 mb-3">{`0${i + 1}`}</div>
-                <div className="font-display text-2xl md:text-3xl text-cream">{c.slot}</div>
+                <div className="text-xs tracking-widest uppercase opacity-50 mb-3">{`0${i + 1}`}</div>
+                <div className="font-display text-2xl md:text-3xl">{c.slot}</div>
               </div>
-              <div className="text-sm space-y-1 text-cream/70">
+              <div className="text-sm space-y-1 opacity-70">
                 {(hovered === i ? c.options : c.options.slice(0, 2)).map((o) => (
                   <div key={o}>· {o}</div>
                 ))}

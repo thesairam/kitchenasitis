@@ -26,10 +26,10 @@ export default function Nav() {
   }, [])
 
   const navBg = solid
-    ? 'bg-spice/95 backdrop-blur border-b border-cream/10'
+    ? 'bg-forest/95 backdrop-blur border-b border-cream/10'
     : 'bg-transparent'
 
-  const textColour = 'text-cream/70 hover:text-cream'
+  const textColour = 'text-cream/65 hover:text-cream'
   const logoColour = 'text-cream'
 
   const homeLinks = [
@@ -71,11 +71,11 @@ export default function Nav() {
 
           {/* Desktop CTA */}
           {isSupperClub ? (
-            <a href="#contact" className="hidden md:inline-flex text-sm bg-forest text-cream px-5 py-2 rounded-full hover:bg-ink transition-colors">
+            <a href="#contact" className="hidden md:inline-flex text-sm bg-spice text-cream px-5 py-2 rounded-full hover:bg-cream hover:text-ink transition-colors">
               Reserve a seat
             </a>
           ) : (
-            <a href="#order" className="hidden md:inline-flex text-sm bg-forest text-cream px-5 py-2 rounded-full hover:bg-ink transition-colors">
+            <a href="#order" className="hidden md:inline-flex text-sm bg-spice text-cream px-5 py-2 rounded-full hover:bg-cream hover:text-ink transition-colors">
               Order
             </a>
           )}
