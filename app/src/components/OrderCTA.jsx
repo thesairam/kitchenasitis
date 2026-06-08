@@ -34,7 +34,7 @@ export default function OrderCTA() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="mt-6 md:mt-8 text-base md:text-xl text-cream/80 max-w-2xl mx-auto"
         >
-          Pre-orders close 24h before each cook. I make only what's ordered — zero waste.
+          Pre-orders close 24h before each cook. I make only what's ordered. Zero waste.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

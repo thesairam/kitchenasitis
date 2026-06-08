@@ -13,17 +13,17 @@ const experiences = [
   {
     n: '02',
     title: 'The Food',
-    body: 'A rotating feast — always built around the biryani and the protein bowl, with small plates, chutneys, and house drinks woven through the evening. No substitutions. No compromises.',
+    body: 'A rotating feast, always built around the biryani and the protein bowl, with small plates, chutneys, and house drinks woven through the evening. No substitutions. No compromises.',
   },
   {
     n: '03',
     title: 'The Stories',
-    body: 'Each supper club has a theme — a region, a festival, a season. The chef talks about the food as it arrives: where the recipe is from, what occasion it belongs to, what it means.',
+    body: 'Each supper club has a theme: a region, a festival, a season. The chef talks about the food as it arrives, where the recipe is from, what occasion it belongs to, what it means.',
   },
   {
     n: '04',
     title: 'Mehndi',
-    body: 'Our henna artist brings the tradition of mehndi to the table. Guests are invited to receive henna before or after dinner — intricate, meaningful patterns rooted in Indian celebration.',
+    body: 'Our henna artist brings the tradition of mehndi to the table. Guests are invited to receive henna before or after dinner. Intricate, meaningful patterns rooted in Indian celebration.',
   },
 ]
 
@@ -69,7 +69,7 @@ export default function SupperClub() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-7 md:mt-10 text-base md:text-xl text-cream/70 max-w-2xl leading-relaxed"
           >
-            An evening of Indian food, culture, and community — cooked from memory, shared at a long table in Amsterdam.
+            An evening of Indian food, culture, and community. Cooked from memory, shared at a long table in Amsterdam.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -107,7 +107,7 @@ export default function SupperClub() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="space-y-5 text-ink/70 leading-relaxed"
           >
-            <p>The Amsterdam Supper Club is a monthly Indian-themed evening — intimate, seated, cultural. Every gathering has a theme drawn from a region, a festival, or a season in India.</p>
+            <p>The Amsterdam Supper Club is a monthly Indian-themed evening: intimate, seated, cultural. Every gathering has a theme drawn from a region, a festival, or a season in India.</p>
             <p>The food is the anchor. But around the table, Indian tradition comes alive through storytelling, mehndi, music, and the kind of conversation that only happens when people eat together slowly.</p>
             <p>Maximum 12 guests. One long table. One kitchen. Everything cooked fresh on the day.</p>
           </motion.div>
@@ -177,9 +177,9 @@ export default function SupperClub() {
               Mehndi.<br />The art of<br />celebration.
             </h2>
             <div className="space-y-4 text-cream/70 leading-relaxed max-w-xl">
-              <p>Mehndi — henna applied to the hands — has been part of Indian celebrations for over a thousand years. Weddings, festivals, prayers. It is an art form and a blessing in one.</p>
-              <p>At each supper club, our henna artist brings this tradition to the table. Before or after dinner, guests receive their own mehndi — patterns rooted in real tradition, designed for the evening's theme.</p>
-              <p className="text-cream/45 text-sm">Our henna artist is Rachana — a trained mehndi artist based in Amsterdam, blending classical Indian motifs with a contemporary, precise style.</p>
+              <p>Mehndi (henna applied to the hands) has been part of Indian celebrations for over a thousand years. Weddings, festivals, prayers. It is an art form and a blessing in one.</p>
+              <p>At each supper club, our henna artist brings this tradition to the table. Before or after dinner, guests receive their own mehndi. Patterns rooted in real tradition, designed for the evening's theme.</p>
+              <p className="text-cream/45 text-sm">Our henna artist is Rachana, a trained mehndi artist based in Amsterdam, blending classical Indian motifs with a contemporary, precise style.</p>
             </div>
             <div className="mt-8">
               <a
@@ -214,9 +214,9 @@ export default function SupperClub() {
 
           <div className="grid sm:grid-cols-3 gap-5">
             {[
-              { icon: '🪔', title: 'Themed evenings', body: 'Each supper club draws from a specific Indian context — Holi, Diwali, harvest season, or a regional cuisine. The décor, music, and food align with the theme.' },
-              { icon: '🌸', title: 'Flowers & ritual',  body: 'Marigolds, jasmine, brass lamps. The table is set the way a celebration is set in India — with intention and beauty that has meaning behind it.' },
-              { icon: '🎶', title: 'Music & story',     body: 'Ambient Indian classical or folk music sets the tone. The chef shares the story behind each dish as it arrives — because food without context is just eating.' },
+              { icon: '🪔', title: 'Themed evenings', body: 'Each supper club draws from a specific Indian context: Holi, Diwali, harvest season, or a regional cuisine. The décor, music, and food align with the theme.' },
+              { icon: '🌸', title: 'Flowers & ritual',  body: 'Marigolds, jasmine, brass lamps. The table is set the way a celebration is set in India, with intention and beauty that has meaning behind it.' },
+              { icon: '🎶', title: 'Music & story',     body: 'Ambient Indian classical or folk music sets the tone. The chef shares the story behind each dish as it arrives. Food without context is just eating.' },
             ].map((item, i) => (
               <motion.div
                 key={item.title}

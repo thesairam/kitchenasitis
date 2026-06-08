@@ -48,7 +48,7 @@ export default function ContactForm({ type = 'supper-club' }) {
       })
       const data = await res.json().catch(() => ({}))
       if (res.ok && data.ok) {
-        setStatus({ kind: 'ok', msg: "Message sent — we'll reply by email within 24h." })
+        setStatus({ kind: 'ok', msg: "Message sent! We'll reply by email within 24h." })
         setForm(initial)
       } else {
         setStatus({ kind: 'error', msg: data?.error || 'Something went wrong. Please try WhatsApp instead.' })
@@ -149,7 +149,7 @@ export default function ContactForm({ type = 'supper-club' }) {
                 className="bg-surface rounded-2xl p-5 text-sm text-ink/60 leading-relaxed space-y-2"
               >
                 <strong className="text-ink block">Privacy notice (GDPR)</strong>
-                <p><strong>Controller:</strong> Kitchen As It Is, Amsterdam — kitchenasitis@gmail.com</p>
+                <p><strong>Controller:</strong> Kitchen As It Is, Amsterdam. kitchenasitis@gmail.com</p>
                 <p><strong>What we collect:</strong> name, email, phone (optional), and message submitted through this form, plus the timestamp of your consent.</p>
                 <p><strong>Why:</strong> solely to reply to your enquiry. Lawful basis: your consent (GDPR Art. 6(1)(a)).</p>
                 <p><strong>How it works:</strong> your message is relayed by our server (DigitalOcean EU) to our Gmail inbox via Google SMTP. The server does not log or store your message. No analytics, cookies, or trackers.</p>
@@ -184,7 +184,7 @@ export default function ContactForm({ type = 'supper-club' }) {
           >
             <div className="bg-surface rounded-3xl p-8 md:p-10">
               <h3 className="font-display text-3xl mb-2">Prefer a quick chat?</h3>
-              <p className="text-ink/60 mb-6">Reach out on WhatsApp or Instagram — we reply fast.</p>
+              <p className="text-ink/60 mb-6">Reach out on WhatsApp or Instagram. We reply fast.</p>
               <div className="flex flex-wrap gap-3">
                 <a
                   href={WHATSAPP}
@@ -212,7 +212,7 @@ export default function ContactForm({ type = 'supper-club' }) {
 
             <div className="bg-surface rounded-3xl p-8 md:p-10">
               <h3 className="font-display text-3xl mb-2">Order food?</h3>
-              <p className="text-ink/60 mb-6">Biryani and Protein Bowl orders go through Kookxtra or WhatsApp — not through this form.</p>
+              <p className="text-ink/60 mb-6">Biryani and Protein Bowl orders go through Kookxtra or WhatsApp, not through this form.</p>
               <a
                 href="https://wa.me/31647804089?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Kitchen%20As%20It%20Is!"
                 target="_blank"

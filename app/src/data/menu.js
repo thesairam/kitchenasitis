@@ -10,7 +10,7 @@ export const biryanis = [
   },
   {
     name: 'Fry Piece Biryani',
-    description: 'Andhra-style biryani with deep-fried masala chicken pieces layered into dum-cooked rice. Intense, aromatic — eaten on special occasions.',
+    description: 'Andhra-style biryani with deep-fried masala chicken pieces layered into dum-cooked rice. Intense, aromatic. Eaten on special occasions.',
     tags: ['Halal', 'Spicy'],
     price: 15,
     vegPrice: 12,
@@ -19,7 +19,7 @@ export const biryanis = [
   },
   {
     name: '65 Biryani',
-    description: 'Named after the legendary Chicken 65. Crispy spiced chicken folded into dum biryani — bold, punchy, street-food classic elevated.',
+    description: 'Named after the legendary Chicken 65. Crispy spiced chicken folded into dum biryani. Bold, punchy, street-food classic elevated.',
     tags: ['Halal', 'Spicy', 'Street style'],
     price: 15,
     vegPrice: 12,
@@ -32,7 +32,7 @@ export const proteinBowl = {
   name: 'Protein Bowl',
   tagline: 'Strength, in a bowl.',
   description:
-    "A complete Andhra meal: slow-cooked toor dal pappu over steamed rice, topped with a rotating green, protein, and seasonal vegetable. Finished with ghee tadka and house pickle. Available veg and non-veg — the protein and greens rotate with each week's menu.",
+    "A complete Andhra meal: slow-cooked toor dal pappu over steamed rice, topped with a rotating green, protein, and seasonal vegetable. Finished with ghee tadka and house pickle. Available veg and non-veg. The protein and greens rotate with each week's menu.",
   components: [
     { slot: 'Base', options: ['Toor dal pappu', 'Steamed rice'] },
     { slot: 'Green', options: ['Spinach', 'Moringa', 'Methi'] },
@@ -50,7 +50,7 @@ export const drinks = [
   {
     name: 'Andhra Majjiga',
     tagline: 'The coolant after the fire.',
-    description: 'Spiced buttermilk the Andhra way — thin-set curd whisked with fresh curry leaves, green chilli, ginger, and a pinch of asafoetida.',
+    description: 'Spiced buttermilk, the Andhra way. Thin-set curd whisked with fresh curry leaves, green chilli, ginger, and a pinch of asafoetida.',
     price: 4,
   },
   {
@@ -75,7 +75,7 @@ export const stats = [
 
 export const steps = [
   { n: 1, title: 'Browse the week', body: 'Each Monday I post the rotating biryani and protein bowl for the week on Kookxtra and WhatsApp.' },
-  { n: 2, title: 'Pre-order', body: 'Order 24–48h ahead. I only cook what is ordered — zero waste, zero shortcuts.' },
+  { n: 2, title: 'Pre-order', body: 'Order 24–48h ahead. I only cook what is ordered. Zero waste, zero shortcuts.' },
   { n: 3, title: 'I cook on the day', body: 'Dum-cooked, sealed, slow. Every batch fresh from the kitchen.' },
   { n: 4, title: 'Pick up or delivered', body: 'Self-pickup in Amsterdam, or delivery via Kookxtra.' },
 ]

@@ -14,8 +14,8 @@ import SupperClub from './components/SupperClub'
 
 function HomePage() {
   usePageMeta({
-    title: 'Kitchen As It Is — Authentic Indian Home Cooking & Supper Club in Amsterdam',
-    description: 'Authentic Hyderabadi dum biryani and Andhra protein bowl — home-cooked in Amsterdam. Halal. Order on Kookxtra or WhatsApp. Plus: monthly Indian supper club.',
+    title: 'Kitchen As It Is | Authentic Indian Home Cooking & Supper Club in Amsterdam',
+    description: 'Authentic Hyderabadi dum biryani and Andhra protein bowl, home-cooked in Amsterdam. Halal. Order on Kookxtra or WhatsApp. Monthly Indian supper club.',
     canonicalPath: '/',
   })
   return (
@@ -33,7 +33,7 @@ function HomePage() {
 
 function SupperClubPage() {
   usePageMeta({
-    title: 'Amsterdam Indian Supper Club — Kitchen As It Is',
+    title: 'Amsterdam Indian Supper Club | Kitchen As It Is',
     description: 'A monthly Indian-themed supper club in Amsterdam. Authentic home-cooked feast, mehndi experience with Henna by Rachana, cultural storytelling. Max 12 guests.',
     canonicalPath: '/supper-club',
   })
