@@ -54,7 +54,7 @@ export default function Nav() {
               src="/logo.png"
               alt=""
               aria-hidden="true"
-              className={`h-16 md:h-20 w-auto transition-all duration-500 ${solid ? 'brightness-0 invert' : ''}`}
+              className={`h-20 md:h-28 w-auto transition-all duration-500 ${solid ? 'brightness-0 invert' : ''}`}
             />
             <span className="font-display text-xl md:text-2xl tracking-tight">
               Kitchen <span className="text-spice">As It Is</span>
