@@ -49,12 +49,16 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-5 md:px-10 py-4 flex items-center justify-between">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className={`flex items-center gap-3 ${logoColour}`}>
             <img
               src="/logo.png"
-              alt="Kitchen As It Is"
+              alt=""
+              aria-hidden="true"
               className={`h-16 md:h-20 w-auto transition-all duration-500 ${solid ? 'brightness-0 invert' : ''}`}
             />
+            <span className="font-display text-xl md:text-2xl tracking-tight">
+              Kitchen <span className="text-spice">As It Is</span>
+            </span>
           </Link>
 
           {/* Desktop links */}
